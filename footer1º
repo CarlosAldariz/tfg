@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+    <style>
+       .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 20%;
+            background-color: #FFBA62; 
+            color: #154360;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+       .footer-left {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; 
+            margin-left: 20%;
+        }
+       .footer-left p {
+            margin: 3px 0;
+        }
+       .footer-left a {
+            text-decoration: none; /* Remover el subrayado */
+            color: inherit; /* Mantener el color del texto */
+            cursor: pointer; /* Cambiar el cursor al estilo de enlace */
+        }
+       .footer-right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end; 
+            margin-right: 27%;
+        }
+       .footer-right p {
+            margin: 3px 0;
+        }
+       .footer-right a {
+            text-decoration: none; /* Remover el subrayado */
+            color: inherit; /* Mantener el color del texto */
+            cursor: pointer; /* Cambiar el cursor al estilo de enlace */
+        }
+    </style>
+</head>
+<body>
+    <!-- Content here -->
+    <div class="footer">
+        <div class="footer-left">
+            <p><strong>LEGAL</strong></p>
+            <p><a href="#">Aviso Legal</a></p>
+            <p><a href="#">Política de privacidad y cookies</a></p>
+            <p><a href="#">Envío y pago</a></p>
+            <p><a href="#">Derecho de desestimiento</a></p>
+        </div>
+        <div class="footer-right">
+            <p><strong>INFORMACIÓN</strong></p>
+            <p><a href="Index.php">Quienes somos</a></p>
+            <p><a href="#">Revista</a></p>
+            <p><a href="#">Radio</a></p>
+            <p><a href="#">Playas</a></p>
+            <p><a href="#">Contacto</a></p>
+        </div>
+    </div>
+</body>
+</html>
