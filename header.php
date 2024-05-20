@@ -16,10 +16,10 @@
                 <p><a href="#">Noticias</a></p>
             </div>  
             <div class="logo izquierda"> 
-                <p><a href="#">&nbsp; &nbsp; &nbsp; &nbsp; Acceso a Playas</a></p>
+                <p><a href="#">&nbsp; &nbsp; &nbsp; Acceso a Playas</a></p>
             </div>  
             <div class="logo izquierda"> 
-                <p><a href="#">&nbsp; &nbsp; &nbsp; &nbsp;Tienda</a></p>
+                <p><a href="#">&nbsp; &nbsp; &nbsp; Tienda</a></p>
             </div>  
             <div class="derecha"> 
                 <form name="busqueda" class="buscar" action="<?php echo RUTA; ?>/buscar.php" method="get"> 
