@@ -1,0 +1,344 @@
+/* Declaración de variables de color */
+:root {
+	--color4: #003b46; 
+	--color2: #07575b; 
+	--color3: #66a5ad; 
+	--color1: #c4dfe6; 
+	--color5: #fbfbfd; 
+  }
+  
+  /* Estilos generales */
+  * {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+  }
+  
+  body {
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	background: var(--color1); /* Utilizando la variable para el color de fondo */
+	color: var(--color2); /* Utilizando la variable para el color del texto */
+	margin: 0; 
+  }
+  
+  a {
+	text-decoration: none;
+	color: var(--color5); /* Utilizando la variable para el color de los enlaces */
+  } 
+  
+  a:hover {
+	text-decoration: underline;
+  } 
+  
+  .contenedor {
+	max-width: 1000px;
+	width: 90%;
+	margin: auto;
+  }
+  
+  .izquierda {
+	float: left;
+  }
+  
+  .derecha {
+	float: right;
+  }
+  
+  /* --- Header ---*/
+  header {
+	color: var(--color4); /* Utilizando la variable para el color del texto */
+	margin-bottom: 30px;
+	background: var(--color3); /* Utilizando la variable para el color de fondo */
+  }
+  
+  header .contenedor {
+	overflow: hidden;
+  }
+  
+  header .logo {
+	max-width: 300px;
+  }
+  
+  header .logo a {
+	color: var(--color5); /* Utilizando la variable para el color del texto */
+	font-family: "Oswald", Arial, Sans-serif;
+	font-size: 28px;
+	line-height: 70px;
+  }
+  
+  header .logo a:hover {
+	text-decoration: none;
+  }
+  
+  header .buscar {
+	display: inline-block;
+	position: relative;
+	margin-right: 15px;
+  }
+  
+  header .buscar input[type="text"]{
+	background: none;
+	border:1px var(--color3);;
+	color: var(--color2); /* Utilizando la variable para el color del texto */
+	height: 30px;
+	padding: 0 10px;
+	padding-right: 32px;  
+	background-color: var(--color1);
+  }
+  
+  header .buscar input[type="text"]:hover,
+  header .buscar input[type="text"]:focus {
+	color: var(--color2); /* Utilizando la variable para el color del texto */
+	border: var(--color3); /* Utilizando la variable para el color del borde */
+	background-color: var(--color1);
+  }
+  
+  header .buscar .icono {
+	color: var(--color2); /* Utilizando la variable para el color del texto */
+	position: absolute;
+	right: 0;
+	background: none;
+	border:none;
+	cursor:pointer;
+	padding: 6px;
+	font-size: 16px;
+	line-height: 16px;
+  }
+  
+  header .buscar .icono:hover {
+	color: var(--color2); /* Utilizando la variable para el color del texto */
+  }
+  
+  header .menu {
+	display: inline-block;
+  }
+  
+  header .menu ul {
+	list-style: none;
+  }
+  
+  header .menu ul li {
+	display: inline-block;
+	line-height: 70px;
+  }
+  
+  header .menu ul li a {
+	color: var(--color2); /* Utilizando la variable para el color del texto */
+	display: block;
+	padding: 0px 20px;
+	font-weight: bold;
+  }
+  
+  header .menu ul li a:hover {
+	background: var(--color4); /* Utilizando la variable para el color de fondo */
+	text-decoration: none;
+  }
+  
+  header .menu ul li a .icono {
+	margin-left: 15px;
+  }
+  
+  /* --- Post --- */
+  .post {
+	width: 100%;
+	background: var(--color3); /* Utilizando la variable para el color de fondo */
+	box-shadow: 0px 0px 5px rgba(0,0,0, .5);
+	margin-bottom: 30px;
+	padding: 30px; 
+	color: var(--color5); /* Utilizando la variable para el color del texto */
+  }
+  
+  .post article .titulo {
+	font-family: "Oswald", Arial, Sans-serif;
+	font-size: 28px;
+	font-weight: normal;
+	line-height: 28px;
+	margin-bottom: 10px;
+  }
+  
+  .post article .titulo a {
+	color: var(--color1); /* Utilizando la variable para el color de los enlaces */
+  }
+  
+  .post article .fecha {
+	color: var(--color5); /* Utilizando la variable para el color del texto */
+	font-size: 14px;
+	margin-bottom: 20px;
+  }
+  
+  .post article .thumb {
+	margin-bottom: 20px;
+  }
+  
+  .post article .thumb img {
+	vertical-align: top;
+	width: 100%;
+  }
+  
+  .post article .extracto {
+	font-size: 14px;
+	line-height: 20px;
+	margin-bottom: 20px;
+  }
+  
+  .post article .continuar {
+	color: var(--color1); /* Utilizando la variable para el color de los enlaces */
+	font-weight: bold;
+  }
+  
+  .btn {
+	padding: 15px;
+	display: inline-block;
+	margin: 15px 0;
+	background: var(--color3); /* Utilizando la variable para el color de fondo */
+	color: var(--color2); /* Utilizando la variable para el color del texto */
+	font-size: 1em;
+	font-family: Arial, sans-serif, helvetica;
+	border-radius: 2px;
+	border:none;
+  }
+  
+  .btn:hover {
+	text-decoration: none;
+	background: var(--color4); /* Utilizando la variable para el color de fondo */
+  }
+  
+  /* --- Footer --- */
+  .footer {  
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	height: 20%;
+	background-color: var(--color4); /* Utilizando la variable para el color de fondo */
+	color: var(--color2); /* Utilizando la variable para el color del texto */
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center; 
+	margin-top: 30px;  
+  }
+  
+  .footer-left {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start; 
+	margin-left: 20%;
+  }
+  
+  .footer-left p {
+	margin: 3px 0;
+  }
+  
+  .footer-left a {
+	text-decoration: none; 
+	color: inherit; 
+	cursor: pointer; 
+  }
+  
+  .footer-right {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end; 
+	margin-right: 27%;
+  }
+  
+  .footer-right p {
+	margin: 3px 0;
+  }
+  
+  .footer-right a {
+	text-decoration: none; 
+	color: inherit; 
+	cursor: pointer; 
+  }
+  .paginacion {
+	margin-bottom: 30px !important;
+}
+
+.paginacion ul {
+	list-style: none;
+	text-align: center;
+}
+
+.paginacion ul li {
+	display: inline-block;
+	margin:0 5px;
+	color: var(--color1); /* Utilizando la variable para el color del texto */
+}
+
+.paginacion ul li a {
+	display: block;
+	padding:10px 20px;
+	background: var(--color1); /* Utilizando la variable para el color de fondo */
+	color: var(--color2); /* Utilizando la variable para el color del texto */
+}
+
+.paginacion ul li a:hover {
+	background: var(--color4); /* Utilizando la variable para el color de fondo */
+	text-decoration: none;
+}
+
+.paginacion ul .active {
+	background: var(--color3); /* Utilizando la variable para el color de fondo */
+	padding:10px 20px;
+}
+
+.paginacion ul .disabled{
+	background: var(--color3); /* Utilizando la variable para el color de fondo */
+	padding:10px 20px;
+	cursor: not-allowed;
+}
+
+.paginacion ul .disabled:hover {
+	background: var(--color3); /* Utilizando la variable para el color de fondo */
+}
+
+/* --- Formularios --- */
+.formulario {
+	width: 100%;
+	overflow: hidden;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="password"],
+.formulario textarea {
+	border: 1px solid #A8A8A8;
+	border-radius: 2px;
+	padding: 16px;
+	width: 100%;
+	display: block;
+	margin-bottom:20px;
+	font-family:Arial, sans-serif, helvetica;
+	font-size: 1em;
+	color:#141938;
+}
+
+.formulario input[type="text"]:focus,
+.formulario input[type="email"]:focus,
+.formulario input[type="password"]:focus,
+.formulario textarea:focus {
+	border: 2px solid #595959;
+	padding: 15px;
+}
+
+.formulario textarea {
+	max-width: 100%;
+	min-width: 100%;
+	min-height: 300px;
+}
+
+.formulario input[type="submit"]{
+	padding: 15px;
+	background: var(--color1); /* Utilizando la variable para el color de fondo */
+	color: var(--color4); /* Utilizando la variable para el color del texto */
+	font-size: 1em;
+	font-family: Arial, sans-serif, helvetica;
+	border-radius: 2px;
+	border:none;
+	float: right;
+	cursor: pointer;
+} 
