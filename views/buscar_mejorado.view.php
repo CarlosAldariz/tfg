@@ -30,16 +30,20 @@
                         <a href="single.php?id=<?php echo $resultado['id']; ?>" class="continuar">Continuar leyendo</a>
                     </article>
                 </div>
-                <?php elseif (isset($resultado['nombre']) && isset($resultado['descripcion'])): ?>
-    <div class="post">
-        <h2 class="titulo"><?php echo $resultado['nombre']; ?></h2>  
-        <?php if (isset($resultado['imagen'])): ?>
-            <div class="thumb">
-                <img src="<?php echo RUTA; ?>/imagenes/<?php echo $resultado['imagen']; ?>" alt="<?php echo $resultado['nombre']; ?>" style="max-width: 100%; height: auto; overflow-clip-margin: content-box; overflow: clip;"> 
-            </div>
-        <?php endif; ?>
+            <?php elseif (isset($resultado['nombre']) && isset($resultado['descripcion'])): ?>
+                <div class="post">
+                    <h2 class="titulo"><?php echo $resultado['nombre']; ?></h2>  
+                    <?php if (isset($resultado['imagen'])): ?>
+                        <div class="thumb">
+                            <img src="<?php echo RUTA; ?>/imagenes/<?php echo $resultado['imagen']; ?>" alt="<?php echo $resultado['nombre']; ?>" style="max-width: 100%; height: auto; overflow-clip-margin: content-box; overflow: clip;"> 
+                        </div>
+                    <?php endif; ?>
                     <p class="descripcion"><?php echo $resultado['descripcion']; ?></p> 
-                    <a href="producto.php?id=<?php echo $resultado['CodCat']; ?>"> Más información</a>
+                    <?php if (isset($resultado['CodCat'])): ?>
+                        <a href="producto.php?id=<?php echo $resultado['CodCat']; ?>"> Más información</a>
+                    <?php elseif (isset($resultado['id'])): ?>
+                        <a href="playa.php?id=<?php echo $resultado['id']; ?>"> Más información</a>
+                    <?php endif; ?>
                 </div>
             <?php elseif (isset($resultado['nombre']) && isset($resultado['descripcion']) && isset($resultado['stock'])): ?>
                 <div class="post">
@@ -51,6 +55,11 @@
                         </div>
                     <?php endif; ?>
                     <p class="stock">Stock: <?php echo $resultado['stock']; ?></p>
+                    <?php if (isset($resultado['CodCat'])): ?>
+                        <a href="producto.php?id=<?php echo $resultado['CodCat']; ?>"> Más información</a>
+                    <?php elseif (isset($resultado['id'])): ?>
+                        <a href="playa.php?id=<?php echo $resultado['id']; ?>"> Más información</a>
+                    <?php endif; ?>
                 </div>
             <?php endif; ?>
         <?php endforeach; ?>

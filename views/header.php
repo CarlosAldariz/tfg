@@ -12,7 +12,8 @@
     <title>header</title> 
 </head>
 <body>
-    <header> 
+    <header>   
+        <?php session_start() ?>
     <div class="contenedor">
     <div class="logo izquierda">  
                 <p><a href="<?php echo RUTA; ?>">Noticias</a></p>  
@@ -32,11 +33,18 @@
 
             <nav class="menu"> 
                 <ul> 
-                    <!-- <li><a href="#"><i class="fa fa-anchor"></i></a></li> 
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>  -->
                     <li><a href="http://localhost/php_udemy/blog/login.php">Login <i class="fa fa-anchor"></i></a></li> 
+                </ul> 
+            </nav> 
+            <nav class="menu1"> 
+                <ul> 
+                    <li><a href="http://localhost/php_udemy/blog/admin/cerrar.php">|Cerrar Sesión<i class="fa fa-umbrella" aria-hidden="true"></i></a></li> 
                 </ul>
-            </nav>
+            </nav> 
+            <nav class="carro"> 
+                <ul> 
+                    <li><a href="http://localhost/php_udemy/blog/carrito/index.php">|Carro<i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li> 
+                </ul>
             </div> 
 
         </div>

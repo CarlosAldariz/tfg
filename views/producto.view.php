@@ -12,9 +12,14 @@
                 alt="<?php echo $producto['nombre']; ?>"> 
             </div>  
             <p class="descripcion"><?php echo nl2br($producto['descripcion']); ?></p>  
-            <p class="precio">Precio: $<?php echo number_format($producto['precio'], 2); ?></p>
-            <p class="stock">Stock disponible: <?php echo $producto['stock']; ?></p>
-            
+            <p class="precio">Precio: $<?php echo number_format($producto['precio'], 2); ?></p> 
+            <p class="stock">Stock disponible: <?php echo $producto['stock']; ?></p> 
+            <div style="text-align: center;">
+            <form action="<?php echo RUTA; ?>carrito/index.php" method="POST">
+                    <input type="hidden" name="CodProd" value="<?php echo $producto['CodProd']; ?>">
+                    <button type="submit" style="background: #003b46; color: white;" class="comprar">Comprar</button>
+                </form>
+            </div>
         </article>
     </div> 
 </div> 
