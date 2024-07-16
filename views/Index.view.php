@@ -2,7 +2,13 @@
 
     <div class="container"> 
     <?php foreach($posts as $post): ?>     
+        <style> 
 
+        img { 
+            height:240px;
+        }
+
+        </style>
    
     <div class="square">  
         <div class="image-container"> 
